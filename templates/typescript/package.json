@@ -1,0 +1,46 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm-run-all -p start:dev start:mock-server",
+    "start:dev": "webpack-dev-server  --mode development --inline --hot --open",
+    "start:mock-server": "json-server --port 3000 --watch ./src/mock/database.json -r ./src/mock/routes.json",
+    "build": "webpack  --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dominik Kundel <hi@dominik.dev> (https://dkundel.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@types/react": "^16.9.9",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "npm-run-all": "^4.1.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "style-loader": "^1.0.0",
+    "typescript": "^3.6.4",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.8.2",
+    "wepack-cli": "0.0.1-security"
+  },
+  "dependencies": {
+    "@types/node": "^12.11.1",
+    "axios": "^0.19.0",
+    "history": "^4.10.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.1.1",
+    "reselect": "^4.0.0"
+  }
+}

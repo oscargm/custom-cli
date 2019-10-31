@@ -1,0 +1,44 @@
+{
+  "name": "@oscargm/cli",
+  "version": "1.0.0",
+  "description": "A custom cli bootstrap my projects",
+  "main": "./src/index.js",
+  "bin": {
+    "@oscargm/create-project": "bin/create-project",
+    "create-project": "bin/create-project"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ],
+  "keywords": [
+    "cli",
+    "create-project",
+    "create",
+    "project",
+    "boilerplate",
+    "install",
+    "react",
+    "webpack",
+    "jest"
+  ],
+  "author": "oscargm",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^4.1.1",
+    "chalk": "^2.4.2",
+    "esm": "^3.2.25",
+    "execa": "^3.2.0",
+    "inquirer": "^7.0.0",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
+  }
+}
